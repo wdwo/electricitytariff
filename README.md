@@ -1,3 +1,3 @@
 # Electricity Tariff
 
-Scraping from Singstats official electricity tariff rates.
+Scraping low tension domestic household electricity tariff rates from Singstats official API.
