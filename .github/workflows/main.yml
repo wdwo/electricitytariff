@@ -1,6 +1,6 @@
 # Github Actions  Trigger Python Script
 
-name: divdscrape to csv
+name: scrape electricity tariff to csv
 # Controls when the workflow will run
 on:
   workflow_dispatch         #manual trigger
@@ -24,7 +24,7 @@ jobs:
       - name: install python packages
         run: pip install -r requirements.txt
       
-      - name: execute py script # run divdscrape-gsheet.py
+      - name: execute py script 
         run: python electricitytariff-scrape.py
 
       - name: commit files
