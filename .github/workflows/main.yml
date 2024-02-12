@@ -3,10 +3,9 @@
 name: scrape electricity tariff to csv
 # Controls when the workflow will run
 on:
-  workflow_dispatch         #manual trigger
-
-  #schedule:
-    #- cron: "58 9 1 1-12 *"
+  workflow_dispatch:         #manual trigger
+  schedule:
+    - cron: "58 9 1 1-12 *"
     # Triggers the workflow every 5 minutes
 
 jobs:
