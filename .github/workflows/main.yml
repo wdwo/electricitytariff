@@ -5,8 +5,8 @@ name: scrape electricity tariff to csv
 on:
   workflow_dispatch:         #manual trigger
   schedule:
-    - cron: "58 9 1 1-12 *"
-    # Triggers the workflow every 5 minutes
+    - cron: "55 17 1 1-12 *"
+    # Triggers the workflow every 1st day of month at 17:55
 
 jobs:
   build:
