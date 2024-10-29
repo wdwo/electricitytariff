@@ -2,10 +2,13 @@ import pandas as pd
 import requests
 import gspread as gs
 
+#environment secrets
+credentials = os.environ.get('API_KEY')
+
 #google sheets variables and authentication
 # gsheet_url = 'https://docs.google.com/spreadsheets/d/1CDjYlS68ARa4wq_wD9vrbDHkixNTc2fiMqaArUUA1Cs/'
 # sheet_tabid = '1123207130'                                                          #id number found at the end of url gid=xxxxxxx
-# gc = gs.service_account(filename='DWO-serviceaccount.json')
+# gc = gs.service_account_from_dict(credentials)
 # gsht = gc.open_by_url(gsheet_url).get_worksheet_by_id(sheet_tabid)             
 
 
